@@ -10,9 +10,12 @@
 
 @interface DateNotifierAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
+    UINavigationController *navController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+
+- (void)autoSaveChanges;
 
 @end
 

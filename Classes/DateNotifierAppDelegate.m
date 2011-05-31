@@ -9,6 +9,9 @@
 #import "DateNotifierAppDelegate.h"
 #import "DateDetailEntryStore.h"
 #import "NotificationCenter.h"
+#import "NotificationListGUI.h"
+
+#define kAutoSaveTimeInterval 60
 
 @implementation DateNotifierAppDelegate
 
@@ -19,8 +22,31 @@
 #pragma mark Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+
+    UILocalNotification *notification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
+    if (notification)
+    {
+        [[UIApplication sharedApplication] cancelLocalNotification:notification];
+        [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
+        //< Pop alert here
+        NSLog(@"didFinishLaunchingWithOptions: %@", notification);
+    }
     
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
+
+    NotificationListGUI *listGUI = [[NotificationListGUI alloc] init];
+    navController = [[UINavigationController alloc] initWithRootViewController:listGUI];
+    [listGUI release];
+    
+    [self.window addSubview:navController.view];
     [self.window makeKeyAndVisible];
+
+    //< AUTO SAVE
+    [NSTimer scheduledTimerWithTimeInterval:kAutoSaveTimeInterval
+                                     target:self
+                                   selector:@selector(autoSaveChanges)
+                                   userInfo:nil
+                                    repeats:YES];
     
     return YES;
 }
@@ -39,8 +65,7 @@
      Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
      If your application supports background execution, called instead of applicationWillTerminate: when the user quits.
      */
-    [[DateDetailEntryStore sharedStore] archiveStore];
-    [[NotificationCenter sharedCenter] archiveCenter];
+    [self autoSaveChanges];
 }
 
 
@@ -63,10 +88,20 @@
      Called when the application is about to terminate.
      See also applicationDidEnterBackground:.
      */
+    [self autoSaveChanges];
+}
+
+- (void)autoSaveChanges {
     [[DateDetailEntryStore sharedStore] archiveStore];
     [[NotificationCenter sharedCenter] archiveCenter];
 }
 
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+    NSLog(@"didReceiveLocalNotification: %@", notification);
+    [[UIApplication sharedApplication] cancelLocalNotification:notification];
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
+    //< Pop alert here
+}
 
 #pragma mark -
 #pragma mark Memory management
@@ -77,8 +112,8 @@
      */
 }
 
-
 - (void)dealloc {
+    [navController release];
     [window release];
     [super dealloc];
 }

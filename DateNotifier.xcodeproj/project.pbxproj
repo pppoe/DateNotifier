@@ -13,10 +13,19 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
-		4619A96813937E5400869145 /* NotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4619A96713937E5400869145 /* NotificationCenter.m */; };
-		4619A96E1393844400869145 /* DateDetailEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 4619A96D1393844400869145 /* DateDetailEntry.m */; };
-		4619A9A813938AE600869145 /* DateDetailEntryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4619A9A713938AE600869145 /* DateDetailEntryStore.m */; };
-		4619AA0913939C2500869145 /* NotificationListGUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4619AA0813939C2500869145 /* NotificationListGUI.m */; };
+		46718B7E1394ED2E0046852D /* DateSelectGUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 46718B621394ED2E0046852D /* DateSelectGUI.m */; };
+		46718B7F1394ED2E0046852D /* TextInputGUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 46718B641394ED2E0046852D /* TextInputGUI.m */; };
+		46718B801394ED2E0046852D /* EntryDateSelectGUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 46718B661394ED2E0046852D /* EntryDateSelectGUI.m */; };
+		46718B811394ED2E0046852D /* NotifyDateSelectGUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 46718B681394ED2E0046852D /* NotifyDateSelectGUI.m */; };
+		46718B821394ED2E0046852D /* TextFieldGUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 46718B6A1394ED2E0046852D /* TextFieldGUI.m */; };
+		46718B831394ED2E0046852D /* TextViewGUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 46718B6C1394ED2E0046852D /* TextViewGUI.m */; };
+		46718B841394ED2E0046852D /* AddDateDetailEntryGUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 46718B6F1394ED2E0046852D /* AddDateDetailEntryGUI.m */; };
+		46718B861394ED2E0046852D /* DateDetailEntryGUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 46718B731394ED2E0046852D /* DateDetailEntryGUI.m */; };
+		46718B871394ED2E0046852D /* NotificationListGUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 46718B751394ED2E0046852D /* NotificationListGUI.m */; };
+		46718B881394ED2E0046852D /* UpdateDateDetailEntryGUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 46718B771394ED2E0046852D /* UpdateDateDetailEntryGUI.m */; };
+		46718B891394ED2E0046852D /* DateDetailEntryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 46718B7A1394ED2E0046852D /* DateDetailEntryStore.m */; };
+		46718B8A1394ED2E0046852D /* NotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 46718B7C1394ED2E0046852D /* NotificationCenter.m */; };
+		46718BB01394EF3B0046852D /* DateDetailEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 46718BAF1394EF3B0046852D /* DateDetailEntry.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,15 +38,33 @@
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* DateNotifier_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateNotifier_Prefix.pch; sourceTree = "<group>"; };
-		4619A96613937E5400869145 /* NotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationCenter.h; sourceTree = "<group>"; };
-		4619A96713937E5400869145 /* NotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationCenter.m; sourceTree = "<group>"; };
-		4619A96913937E9100869145 /* NotificationEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationEntry.h; sourceTree = "<group>"; };
-		4619A96C1393844400869145 /* DateDetailEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateDetailEntry.h; sourceTree = "<group>"; };
-		4619A96D1393844400869145 /* DateDetailEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateDetailEntry.m; sourceTree = "<group>"; };
-		4619A9A613938AE600869145 /* DateDetailEntryStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateDetailEntryStore.h; sourceTree = "<group>"; };
-		4619A9A713938AE600869145 /* DateDetailEntryStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateDetailEntryStore.m; sourceTree = "<group>"; };
-		4619AA0713939C2500869145 /* NotificationListGUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationListGUI.h; sourceTree = "<group>"; };
-		4619AA0813939C2500869145 /* NotificationListGUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationListGUI.m; sourceTree = "<group>"; };
+		46718B611394ED2E0046852D /* DateSelectGUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateSelectGUI.h; sourceTree = "<group>"; };
+		46718B621394ED2E0046852D /* DateSelectGUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateSelectGUI.m; sourceTree = "<group>"; };
+		46718B631394ED2E0046852D /* TextInputGUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextInputGUI.h; sourceTree = "<group>"; };
+		46718B641394ED2E0046852D /* TextInputGUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextInputGUI.m; sourceTree = "<group>"; };
+		46718B651394ED2E0046852D /* EntryDateSelectGUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryDateSelectGUI.h; sourceTree = "<group>"; };
+		46718B661394ED2E0046852D /* EntryDateSelectGUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryDateSelectGUI.m; sourceTree = "<group>"; };
+		46718B671394ED2E0046852D /* NotifyDateSelectGUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyDateSelectGUI.h; sourceTree = "<group>"; };
+		46718B681394ED2E0046852D /* NotifyDateSelectGUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifyDateSelectGUI.m; sourceTree = "<group>"; };
+		46718B691394ED2E0046852D /* TextFieldGUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldGUI.h; sourceTree = "<group>"; };
+		46718B6A1394ED2E0046852D /* TextFieldGUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldGUI.m; sourceTree = "<group>"; };
+		46718B6B1394ED2E0046852D /* TextViewGUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewGUI.h; sourceTree = "<group>"; };
+		46718B6C1394ED2E0046852D /* TextViewGUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewGUI.m; sourceTree = "<group>"; };
+		46718B6E1394ED2E0046852D /* AddDateDetailEntryGUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDateDetailEntryGUI.h; sourceTree = "<group>"; };
+		46718B6F1394ED2E0046852D /* AddDateDetailEntryGUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddDateDetailEntryGUI.m; sourceTree = "<group>"; };
+		46718B721394ED2E0046852D /* DateDetailEntryGUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateDetailEntryGUI.h; sourceTree = "<group>"; };
+		46718B731394ED2E0046852D /* DateDetailEntryGUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateDetailEntryGUI.m; sourceTree = "<group>"; };
+		46718B741394ED2E0046852D /* NotificationListGUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationListGUI.h; sourceTree = "<group>"; };
+		46718B751394ED2E0046852D /* NotificationListGUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationListGUI.m; sourceTree = "<group>"; };
+		46718B761394ED2E0046852D /* UpdateDateDetailEntryGUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateDateDetailEntryGUI.h; sourceTree = "<group>"; };
+		46718B771394ED2E0046852D /* UpdateDateDetailEntryGUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateDateDetailEntryGUI.m; sourceTree = "<group>"; };
+		46718B791394ED2E0046852D /* DateDetailEntryStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateDetailEntryStore.h; sourceTree = "<group>"; };
+		46718B7A1394ED2E0046852D /* DateDetailEntryStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateDetailEntryStore.m; sourceTree = "<group>"; };
+		46718B7B1394ED2E0046852D /* NotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationCenter.h; sourceTree = "<group>"; };
+		46718B7C1394ED2E0046852D /* NotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationCenter.m; sourceTree = "<group>"; };
+		46718B7D1394ED2E0046852D /* NotificationEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationEntry.h; sourceTree = "<group>"; };
+		46718BAE1394EF3B0046852D /* DateDetailEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateDetailEntry.h; sourceTree = "<group>"; };
+		46718BAF1394EF3B0046852D /* DateDetailEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateDetailEntry.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* DateNotifier-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "DateNotifier-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,7 +102,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				4619A96513937E1100869145 /* Notifier */,
+				46718B5E1394ED2E0046852D /* Notifier */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -113,20 +140,70 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4619A96513937E1100869145 /* Notifier */ = {
+		46718B5E1394ED2E0046852D /* Notifier */ = {
 			isa = PBXGroup;
 			children = (
-				4619A96613937E5400869145 /* NotificationCenter.h */,
-				4619A96713937E5400869145 /* NotificationCenter.m */,
-				4619A96913937E9100869145 /* NotificationEntry.h */,
-				4619A96C1393844400869145 /* DateDetailEntry.h */,
-				4619A96D1393844400869145 /* DateDetailEntry.m */,
-				4619A9A613938AE600869145 /* DateDetailEntryStore.h */,
-				4619A9A713938AE600869145 /* DateDetailEntryStore.m */,
-				4619AA0713939C2500869145 /* NotificationListGUI.h */,
-				4619AA0813939C2500869145 /* NotificationListGUI.m */,
+				46718B5F1394ED2E0046852D /* Components */,
+				46718B6D1394ED2E0046852D /* GUI */,
+				46718B781394ED2E0046852D /* Shared */,
 			);
 			path = Notifier;
+			sourceTree = "<group>";
+		};
+		46718B5F1394ED2E0046852D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				46718B601394ED2E0046852D /* Base */,
+				46718B651394ED2E0046852D /* EntryDateSelectGUI.h */,
+				46718B661394ED2E0046852D /* EntryDateSelectGUI.m */,
+				46718B671394ED2E0046852D /* NotifyDateSelectGUI.h */,
+				46718B681394ED2E0046852D /* NotifyDateSelectGUI.m */,
+				46718B691394ED2E0046852D /* TextFieldGUI.h */,
+				46718B6A1394ED2E0046852D /* TextFieldGUI.m */,
+				46718B6B1394ED2E0046852D /* TextViewGUI.h */,
+				46718B6C1394ED2E0046852D /* TextViewGUI.m */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		46718B601394ED2E0046852D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				46718B611394ED2E0046852D /* DateSelectGUI.h */,
+				46718B621394ED2E0046852D /* DateSelectGUI.m */,
+				46718B631394ED2E0046852D /* TextInputGUI.h */,
+				46718B641394ED2E0046852D /* TextInputGUI.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		46718B6D1394ED2E0046852D /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				46718B6E1394ED2E0046852D /* AddDateDetailEntryGUI.h */,
+				46718B6F1394ED2E0046852D /* AddDateDetailEntryGUI.m */,
+				46718B721394ED2E0046852D /* DateDetailEntryGUI.h */,
+				46718B731394ED2E0046852D /* DateDetailEntryGUI.m */,
+				46718B741394ED2E0046852D /* NotificationListGUI.h */,
+				46718B751394ED2E0046852D /* NotificationListGUI.m */,
+				46718B761394ED2E0046852D /* UpdateDateDetailEntryGUI.h */,
+				46718B771394ED2E0046852D /* UpdateDateDetailEntryGUI.m */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		46718B781394ED2E0046852D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				46718BAE1394EF3B0046852D /* DateDetailEntry.h */,
+				46718BAF1394EF3B0046852D /* DateDetailEntry.m */,
+				46718B791394ED2E0046852D /* DateDetailEntryStore.h */,
+				46718B7A1394ED2E0046852D /* DateDetailEntryStore.m */,
+				46718B7B1394ED2E0046852D /* NotificationCenter.h */,
+				46718B7C1394ED2E0046852D /* NotificationCenter.m */,
+				46718B7D1394ED2E0046852D /* NotificationEntry.h */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,10 +268,19 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* DateNotifierAppDelegate.m in Sources */,
-				4619A96813937E5400869145 /* NotificationCenter.m in Sources */,
-				4619A96E1393844400869145 /* DateDetailEntry.m in Sources */,
-				4619A9A813938AE600869145 /* DateDetailEntryStore.m in Sources */,
-				4619AA0913939C2500869145 /* NotificationListGUI.m in Sources */,
+				46718B7E1394ED2E0046852D /* DateSelectGUI.m in Sources */,
+				46718B7F1394ED2E0046852D /* TextInputGUI.m in Sources */,
+				46718B801394ED2E0046852D /* EntryDateSelectGUI.m in Sources */,
+				46718B811394ED2E0046852D /* NotifyDateSelectGUI.m in Sources */,
+				46718B821394ED2E0046852D /* TextFieldGUI.m in Sources */,
+				46718B831394ED2E0046852D /* TextViewGUI.m in Sources */,
+				46718B841394ED2E0046852D /* AddDateDetailEntryGUI.m in Sources */,
+				46718B861394ED2E0046852D /* DateDetailEntryGUI.m in Sources */,
+				46718B871394ED2E0046852D /* NotificationListGUI.m in Sources */,
+				46718B881394ED2E0046852D /* UpdateDateDetailEntryGUI.m in Sources */,
+				46718B891394ED2E0046852D /* DateDetailEntryStore.m in Sources */,
+				46718B8A1394ED2E0046852D /* NotificationCenter.m in Sources */,
+				46718BB01394EF3B0046852D /* DateDetailEntry.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
